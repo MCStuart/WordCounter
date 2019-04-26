@@ -44,11 +44,22 @@ namespace WordCount.Tests
         public void RepeatCounter_TallySpecificWordInstances_Int()
         {
             // Arrange
-            StringEval newStringEval = new StringEval("word", "this sentence uses a words or two");
+            StringEval newStringEval = new StringEval("word", "this sentence uses a word thing or two");
             // Act
 
             // Assert
             Assert.AreEqual(1, newStringEval.RepeatCounter());
+        }
+
+        [TestMethod]
+        public void StringCleaner_RemovesPunctuation_True()
+        {
+            // Arrange
+            StringEval newStringEval = new StringEval("word", "this sentence uses a word thing or two");
+            // Act
+            // Assert
+
+            Assert.AreEqual(1, newString.RepeatCounter());
         }
 
     }

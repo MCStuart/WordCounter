@@ -49,5 +49,21 @@ namespace WordCount
             }
             return wordCount;
         }
+
+        public string StringCleaner()
+        {
+            char[] symbols = new char[] { '!', '-', '@', ',', ', ', '?' };
+            char[] symbolsIterator = this.GetSentence().ToCharArray();
+            for (int i = 0; i < symbolsIterator.Length; i++)
+            {
+                if (symbols.Contains(symbolsIterator)[i])
+                {
+                    symbolsIterator[i] = " ";
+                }
+            }
+            string result = new string(symbolsIterator);
+            return results;
+
+        }
     }
 }
