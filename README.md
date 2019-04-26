@@ -31,8 +31,12 @@ This work is the sole ownership of the Authors'. Distribution is permitted under
 ### Behavioral Driven Development Steps:
 | Behavior | Input | Output | Reasoning |
 | ------------- |:-------------:| :-------------:| -------: |  
-| Tells you if a single character matches with another value or not | 'a' == 'a' | true |
-| Detects an input value inside another more complex value and returns frequency of that occurrence | "a" == "az" ? | 1 |
-| Can detect multiple instances of a comparator value inside another value | "a" --> "asdfwasd" | 2 |
-| Tells you if a single word matches with another value or not | "word" == "word" | true |
-| Returns the frequency of match cases of a word with a comparison value | "and" --> "Lions and tigers and bears" | 2 |
+| Tells you if a single character matches with another value or not | 'a' == 'a' | true | The simplest test case, evaluating whether a single character can recognize itself in another value field |
+
+| Detects an input value inside another more complex value and returns frequency of that occurrence | "a" == "az" ? | 1 | Introduces looping for a, still, very simple test case through a more complex test case |
+
+| Can detect multiple instances of a comparator value inside another value | "a" --> "asdfwasd" | 2 | Build off the looping and starts counting 'true' instances of the comparator |
+
+| Tells you if a single word matches with another value or not | "word" == "word" | true | Increases complexity from single characters to a word |
+
+| Returns the frequency of match cases of a word with a comparison value | "and" --> "Lions and tigers and bears" | 2 | Evaluates for a word now in a sentence |
