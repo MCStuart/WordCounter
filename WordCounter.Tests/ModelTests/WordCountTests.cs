@@ -41,15 +41,15 @@ namespace WordCount.Tests
         }
 
         [TestMethod]
-        public void ToStringList_TurnsSentenceIntoArray_List()
+        public void WordCount_TallySpecificWordInstances_Int()
         {
             // Arrange
-            StringEval newStringEval = new StringEval("", "there is word in here");
+            StringEval newStringEval = new StringEval("word", "there is a word in here");
             // Act
-            List<string> testList = new List<string> { "there", "is", "a", "word", "in", "here" };
-            List<string> wordsOfSentence = new List<string>(sentence.Split(' '));
+
             // Assert
-            Assert.AreEqual(testList, wordsOfSentence);
+            Assert.AreEqual(1, newStringEval.WordCount());
         }
+
     }
 }

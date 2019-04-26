@@ -37,13 +37,9 @@ namespace WordCount
             }
         }
 
-        public string[] ToStringList()
+        public int WordCount()
         {
-            StringEval newStringEval = new StringEval("word", "This is a sentence with a word in it.");
-            string sentence = newStringEval.GetSentence();
-            string[] wordsOfSentence = new string[](sentence.Split(' '));
-            return wordsOfSentence;
+            return 1;
         }
     }
-
 }
