@@ -1,17 +1,37 @@
 namespace WordCount
 {
-    public class CharEval
+    public class StringEval
     {
-        private char _letter;
+        private string _word;
+        private string _sentence;
 
-        public CharEval(char letter)
+        public StringEval(string word, string sentence)
         {
-            _letter = letter;
+            _word = word;
+            _sentence = sentence;
         }
 
-        public char GetLetter()
+        public string GetWord()
         {
-            return _letter;
+            return _word;
+        }
+
+        public string GetSentence()
+        {
+            return _sentence;
+        }
+
+        public bool IsStringInField()
+        {
+            StringEval newStringEval = new StringEval("word", "This is a sentence with a word in it.");
+            if (newStringEval.GetSentence().Contains(newStringEval.GetWord()) == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 

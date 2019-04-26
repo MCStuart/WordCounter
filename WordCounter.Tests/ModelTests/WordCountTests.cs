@@ -7,24 +7,35 @@ namespace WordCount.Tests
     public class WordTest
     {
         [TestMethod]
-        public void CharEval_IsEqualToItself_True()
+        public void StringEval_IsEqualToItself_True()
         {
             // Arrange
             // Act
-            CharEval newCharEval = new CharEval('a');
+            StringEval newStringEval = new StringEval("word", "");
             // Assert
-            Assert.AreEqual(typeof(CharEval), newCharEval.GetType());
+            Assert.AreEqual(typeof(StringEval), newStringEval.GetType());
         }
 
         [TestMethod]
-        public void CharEval_CanEvaulateCharMatch_True()
+        public void StringEval_CanEvaulateStringMatch_True()
         {
             // Arrange
-            CharEval newCharEval = new CharEval('b');
+            StringEval newStringEval = new StringEval("word", "");
             // Act
-            char result = newCharEval.GetLetter();
+            string result = newStringEval.GetWord();
             // Assert
-            Assert.AreEqual('b', result);
+            Assert.AreEqual("word", result);
+        }
+
+        [TestMethod]
+        public void IsStringInField_CanEvaulateStringMatchInField_True()
+        {
+            // Arrange
+            StringEval newStringEval = new StringEval("word", "This is a sentence.");
+            // Act
+            bool doesContain = newStringEval.IsStringInField();
+            // Assert
+            Assert.AreEqual(true, doesContain);
         }
     }
 }
