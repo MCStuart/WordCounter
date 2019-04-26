@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 
 namespace WordCount
 {
@@ -26,20 +25,29 @@ namespace WordCount
 
         public bool IsStringInField()
         {
-            StringEval newStringEval = new StringEval("word", "This is a sentence with a word in it.");
-            if (newStringEval.GetSentence().Contains(newStringEval.GetWord()) == true)
+            string word = this.GetWord();
+            string sentence = this.GetSentence();
+            if (this.GetSentence().Contains(this.GetWord()) == true)
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         public int WordCount()
         {
-            return 1;
+            int wordCount = 0;
+            string theWord = this.GetWord();
+            string sentence = this.GetSentence();
+            string[] sentenceArray = sentence.Split(' ');
+            foreach (string word in sentenceArray)
+            {
+                if (theWord == word)
+                {
+                    wordCount++;
+                }
+            }
+            return wordCount;
         }
     }
 }

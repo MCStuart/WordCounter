@@ -44,7 +44,7 @@ namespace WordCount.Tests
         public void WordCount_TallySpecificWordInstances_Int()
         {
             // Arrange
-            StringEval newStringEval = new StringEval("word", "there is a word in here");
+            StringEval newStringEval = new StringEval("word", "this sentence uses a word or two");
             // Act
 
             // Assert
