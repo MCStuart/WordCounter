@@ -1,7 +1,18 @@
 namespace WordCount
 {
-    public class CharacterEvaluator
+    public class CharEval
     {
-        // code goes here
+        private char _letter;
+
+        public CharEval(char letter)
+        {
+            _letter = letter;
+        }
+
+        public char GetLetter()
+        {
+            return _letter;
+        }
     }
+
 }

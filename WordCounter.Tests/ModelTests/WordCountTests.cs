@@ -7,13 +7,24 @@ namespace WordCount.Tests
     public class WordTest
     {
         [TestMethod]
-        public void CharacterEvaluator_IsEqualToItself_True()
+        public void CharEval_IsEqualToItself_True()
         {
             // Arrange
             // Act
-            CharacterEvaluator newChar = new CharacterEvaluator();
+            CharEval newCharEval = new CharEval('a');
             // Assert
-            Assert.AreEqual(typeof(CharacterEvaluator), newChar.GetType());
+            Assert.AreEqual(typeof(CharEval), newCharEval.GetType());
+        }
+
+        [TestMethod]
+        public void CharEval_CanEvaulateCharMatch_True()
+        {
+            // Arrange
+            CharEval newCharEval = new CharEval('b');
+            // Act
+            char result = newCharEval.GetLetter();
+            // Assert
+            Assert.AreEqual('b', result);
         }
     }
 }
