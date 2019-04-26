@@ -37,4 +37,4 @@ This work is the sole ownership of the Authors'. Distribution is permitted under
 | Detects an input value inside another more complex value | "word" == "here is a word" ? | true |  Very simple test value through a more complex test case |
 | Can detect instances of a comparator value inside another test value by looking at the individual words inside a sentence. No superficial difference from the previous test| "word" --> "there is a word in here" | 1 | Introduces looping through an array |
 | Returns the frequency of match cases of a word with a comparison value | "and" --> "Lions and tigers and bears" | 2 | Returns frequency of the word occurrence and starts counting 'true' instances of the comparator |
-| Returns only whole word exact matches without sub-word false positives | "and" --> "Bland sand and wand bands" | 1 | This will ensure that only true word matches are evaluated as true |
+| Returns only whole word exact matches without sub-word false positives | "and" --> "Bland sand and wand bands" | 1 | This will ensure that only true word matches are evaluated as true (Ended up not needed. captured within previous test)|

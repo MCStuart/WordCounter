@@ -41,14 +41,14 @@ namespace WordCount.Tests
         }
 
         [TestMethod]
-        public void WordCount_TallySpecificWordInstances_Int()
+        public void RepeatCounter_TallySpecificWordInstances_Int()
         {
             // Arrange
             StringEval newStringEval = new StringEval("word", "this sentence uses a word or two");
             // Act
 
             // Assert
-            Assert.AreEqual(1, newStringEval.WordCount());
+            Assert.AreEqual(1, newStringEval.RepeatCounter());
         }
 
     }

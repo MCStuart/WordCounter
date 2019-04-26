@@ -34,7 +34,7 @@ namespace WordCount
             return false;
         }
 
-        public int WordCount()
+        public int RepeatCounter()
         {
             int wordCount = 0;
             string theWord = this.GetWord();
