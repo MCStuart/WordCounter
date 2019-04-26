@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace WordCount
 {
     public class StringEval
@@ -32,6 +35,14 @@ namespace WordCount
             {
                 return false;
             }
+        }
+
+        public string[] ToStringList()
+        {
+            StringEval newStringEval = new StringEval("word", "This is a sentence with a word in it.");
+            string sentence = newStringEval.GetSentence();
+            string[] wordsOfSentence = new string[](sentence.Split(' '));
+            return wordsOfSentence;
         }
     }
 
