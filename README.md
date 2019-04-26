@@ -30,9 +30,7 @@ This work is the sole ownership of the Authors'. Distribution is permitted under
 
 ### Behavioral Driven Development Steps:
 | Behavior | Input | Output | Reasoning |
-| ------------- |:-------------:| :-------------:| :------- |  
-
-
+| ------------- |:-------------:| :-------------:| :------- |
 | Tells you if a single word matches with another value or not | "word" == "word" | true | The simplest test case, evaluating whether a single string can recognize itself in another value field |
 | Detects an input value inside another more complex value | "word" == "here is a word" ? | true |  Very simple test value through a more complex test case |
 | Can detect instances of a comparator value inside another test value by looking at the individual words inside a sentence. No superficial difference from the previous test| "word" --> "there is a word in here" | 1 | Introduces looping through an array |

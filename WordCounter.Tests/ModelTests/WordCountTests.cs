@@ -44,7 +44,7 @@ namespace WordCount.Tests
         public void RepeatCounter_TallySpecificWordInstances_Int()
         {
             // Arrange
-            StringEval newStringEval = new StringEval("word", "this sentence uses a word or two");
+            StringEval newStringEval = new StringEval("word", "this sentence uses a words or two");
             // Act
 
             // Assert
