@@ -24,7 +24,7 @@ namespace WordCount.Tests
             // Arrange
             StringEval newStringEval = new StringEval("word", "");
             // Act
-            string result = newStringEval.GetWord();
+            string result = newStringEval.Word;
             // Assert
             Assert.AreEqual("word", result);
         }
@@ -55,11 +55,11 @@ namespace WordCount.Tests
         public void StringCleaner_RemovesPunctuation_True()
         {
             // Arrange
-            StringEval newStringEval = new StringEval("word", "this sentence uses a word thing or two");
+            StringEval newStringEval = new StringEval("word", "this sentence uses a word, or two");
             // Act
+            Assert.AreEqual("this sentence uses a word or two", newStringEval.StringCleaner());
             // Assert
-
-            Assert.AreEqual(1, newString.RepeatCounter());
+            Assert.AreEqual(1, newStringEval.RepeatCounter());
         }
 
     }

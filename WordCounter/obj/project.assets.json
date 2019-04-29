@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/mcstuart/.nuget/packages/": {},
+    "/Users/Guest/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mcstuart/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/WordCounter/WordCounter/WordCounter.csproj",
       "projectName": "WordCounter",
-      "projectPath": "/Users/mcstuart/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj",
-      "packagesPath": "/Users/mcstuart/.nuget/packages/",
-      "outputPath": "/Users/mcstuart/Desktop/WordCounter.Solution/WordCounter/obj/",
+      "projectPath": "/Users/Guest/Desktop/WordCounter/WordCounter/WordCounter.csproj",
+      "packagesPath": "/Users/Guest/.nuget/packages/",
+      "outputPath": "/Users/Guest/Desktop/WordCounter/WordCounter/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/mcstuart/.nuget/NuGet/NuGet.Config"
+        "/Users/Guest/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
