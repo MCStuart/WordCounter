@@ -9,7 +9,8 @@ namespace WordCount.Controllers
     [HttpGet("/games")]
     public ActionResult Index()
     {
-      return View("Index");
+      List<StringEval> userInput = stringEval.GetAll();
+      return View(userInput);
     }
 
     [HttpGet("/games/new")]
@@ -27,13 +28,6 @@ namespace WordCount.Controllers
       stringEval.Word = word;
       stringEval.Sentence = sentence;
       return RedirectToAction("Index");
-    }
-
-    [HttpPost("/games/delete")]
-    public ActionResult DeleteAll()
-    {
-
-      return View();
     }
 
   }

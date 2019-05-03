@@ -7,6 +7,7 @@ namespace WordCount.Models
     {
         private string _word;
         private string _sentence;
+        private static List<StringEval> _input = new List<StringEval> {};
 
         public string Word { get => _word; set => _word = value; }
         public string Sentence { get => _sentence; set => _sentence = value; }
@@ -25,6 +26,11 @@ namespace WordCount.Models
         public string GetSentence()
         {
             return _sentence;
+        }
+
+        public static List<StringEval> GetAll()
+        {
+            return _input;
         }
 
         public bool IsStringInField()
