@@ -8,9 +8,9 @@
 
 <body>
 <h1>Word Count</h1>
+  <p>Your word, @Model.GetWord(), appears @Model.RepeatCounter() times in the input: @Model.GetSentence() </p>
+  <a href="/games/new">Add a new word count.</a>
 
-<p>Your word, @Model.GetWord, appears (wordCount) times in the input:  </p>
-<a href="/games/new">Add a new word count.</a>
 
 <form action="/games/delete" method="post">
   <button type="submit" name="button">Clear All Word Counts</button>

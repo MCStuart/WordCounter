@@ -7,10 +7,10 @@ namespace WordCount.Controllers
   public class GamesController : Controller
   {
     [HttpGet("/games")]
-    public ActionResult Index()
+    public ActionResult Index(string word, string sentence)
     {
-      List<StringEval> userInput = stringEval.GetAll();
-      return View(userInput);
+      StringEval myGame = new StringEval(word, sentence);
+      return View("Index", myGame);
     }
 
     [HttpGet("/games/new")]
@@ -25,9 +25,7 @@ namespace WordCount.Controllers
     {
 
       StringEval stringEval = new StringEval(word, sentence);
-      stringEval.Word = word;
-      stringEval.Sentence = sentence;
-      return RedirectToAction("Index");
+      return RedirectToAction("Index", stringEval);
     }
 
   }
