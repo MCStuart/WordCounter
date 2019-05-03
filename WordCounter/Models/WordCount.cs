@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace WordCount
+namespace WordCount.Models
 {
     public class StringEval
     {
