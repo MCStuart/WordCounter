@@ -17,6 +17,16 @@ namespace WordCount.Models
             _sentence = sentence;
         }
 
+        public string GetWord()
+        {
+            return _word;
+        }
+
+        public string GetSentence()
+        {
+            return _sentence;
+        }
+
         public bool IsStringInField()
         {
             string word = this.Word;

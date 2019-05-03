@@ -9,8 +9,7 @@ namespace WordCount.Controllers
     [HttpGet("/games")]
     public ActionResult Index()
     {
-
-      return View();
+      return View("Index");
     }
 
     [HttpGet("/games/new")]

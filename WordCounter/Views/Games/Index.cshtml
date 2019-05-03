@@ -1,8 +1,6 @@
-@using WordCount.Models;
-
 <!DOCTYPE html>
 <html>
-
+@using WordCount.Models;
 <head>
     <meta charset='utf-8'>
     <title>Word Games</title>
@@ -11,7 +9,7 @@
 <body>
 <h1>Word Count</h1>
 
-<p>Your word, @Model.Word, appears (wordCount) times in the input: sentenceGoesHere </p>
+<p>Your word, @Model.GetWord(), appears (wordCount) times in the input:  </p>
 <a href="/games/new">Add a new word count.</a>
 
 <form action="/games/delete" method="post">
