@@ -16,3 +16,17 @@
 /Users/Guest/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.deps.json
 /Users/Guest/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.dll
 /Users/Guest/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.pdb
+/Users/mcstuart/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.deps.json
+/Users/mcstuart/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.runtimeconfig.json
+/Users/mcstuart/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.runtimeconfig.dev.json
+/Users/mcstuart/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.dll
+/Users/mcstuart/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.pdb
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.csprojAssemblyReference.cache
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.csproj.CoreCompileInputs.cache
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.RazorAssemblyInfo.cache
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.RazorAssemblyInfo.cs
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.AssemblyInfoInputs.cache
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.AssemblyInfo.cs
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.RazorTargetAssemblyInfo.cache
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.dll
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.pdb
