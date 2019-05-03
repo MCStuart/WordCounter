@@ -36,10 +36,10 @@
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.TagHelpers.output.cache
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.RazorCoreGenerate.cache
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
-/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Words/DeleteAll.g.cshtml.cs
-/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Words/Index.g.cshtml.cs
-/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Words/New.g.cshtml.cs
-/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Words/Show.g.cshtml.cs
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.RazorTargetAssemblyInfo.cs
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.Views.pdb
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.csproj.CopyComplete
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/DeleteAll.g.cshtml.cs
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/Index.g.cshtml.cs
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/New.g.cshtml.cs
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/Show.g.cshtml.cs

@@ -4,27 +4,29 @@ using System.Collections.Generic;
 
 namespace WordCount.Controllers
 {
-  public class GameController : Controller
+  public class GamesController : Controller
   {
     [HttpGet("/games")]
     public ActionResult Index()
     {
-      
+
       return View();
     }
 
     [HttpGet("/games/new")]
     public ActionResult New()
     {
+
       return View();
     }
 
     [HttpPost("/games")]
-    public ActionResult Create(string word, string sentence)
+    public ActionResult StringEval(string word, string sentence)
     {
-      StringEval myGame = new StringEval(word, sentence);
-      myGame.StringCleaner();
-      myGame.RepeatCounter();
+
+      StringEval stringEval = new StringEval(word, sentence);
+      stringEval.Word = word;
+      stringEval.Sentence = sentence;
       return RedirectToAction("Index");
     }
 
@@ -34,13 +36,6 @@ namespace WordCount.Controllers
 
       return View();
     }
-
-    [HttpGet("/games/{id}")]
-     public ActionResult Show(int id)
-     {
-
-       return View();
-     }
 
   }
 }
