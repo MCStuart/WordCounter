@@ -8,8 +8,19 @@
 </head>
 
 <body>
-    <h1>Word Count</h1>
-    <p>Your word, @Model.GetWord(), appears @Model.RepeatCounter() times in the input: @Model.GetSentence() </p>
+    @if (Model.Count == 0)
+    {
+        <h1> no games played yet</h1>
+    }
+
+    @if (Model.Count != 0)
+    {
+        foreach (var game in Model)
+        {
+            <li>game.Word was found in game.Sentence game.RepeatCounter() times</li>
+        }
+       
+    }
     <a href="/games/new">Submit a new word count.</a>
 </body>
 
