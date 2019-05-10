@@ -41,3 +41,5 @@
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.csproj.CopyComplete
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/Index.g.cshtml.cs
 /Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/New.g.cshtml.cs
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/Show.g.cshtml.cs
+/Users/mcstuart/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Games/ClearAll.g.cshtml.cs

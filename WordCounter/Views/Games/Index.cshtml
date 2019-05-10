@@ -8,9 +8,25 @@
 </head>
 
 <body>
-    <h1>Word Count</h1>
-    <p>Your word, @Model.GetWord(), appears @Model.RepeatCounter() times in the input: @Model.GetSentence() </p>
-    <a href="/games/new">Submit a new word count.</a>
-</body>
+    <ul>
+        @if (Model.Count == 0)
+        {
+            <p>You haven't played any games yet!</p>
+        }
+        @if(Model.Count != 0)
+        {
+            @foreach (StringEval stringEval in Model)
+            {
+                <li>
+                <p>Your word:  <a href='/games/@stringEval.GetId()'><strong>@stringEval.GetWord()</strong></a> appears <strong>@stringEval.RepeatCounter()</strong> times in the input: <em>@stringEval.GetSentence()</em> </p>
+                </li>
+                }
+            }
+        </ul>
+        <a href="/games/new">Play a word count game.</a>
+        <form action="/games/delete" method="post">
+            <button type="submit" name="button">Clear game history</button>
+        </form>
+    </body>
 
 </html>
