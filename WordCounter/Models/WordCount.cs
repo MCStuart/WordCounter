@@ -33,6 +33,11 @@ namespace WordCount.Models
             return _input;
         }
 
+        public static void ClearAll()
+        {
+            _input.Clear();
+        }
+
         public bool IsStringInField()
         {
             string word = this.Word;

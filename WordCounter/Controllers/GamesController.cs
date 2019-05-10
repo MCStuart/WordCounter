@@ -7,26 +7,36 @@ namespace WordCount.Controllers
   public class GamesController : Controller
   {
     [HttpGet("/games")]
-    public ActionResult Index(string word, string sentence)
+    public ActionResult Index()
     {
-      StringEval myGame = new StringEval(word, sentence);
-      return View("Index", myGame);
+      StringEval allGame = new StringEval(word, sentence);
+      return View(allGames);
     }
 
     [HttpGet("/games/new")]
     public ActionResult New()
     {
+      return View();
+    }
 
+    [HttpGet("/games/show")]
+    public ActionResult Show()
+    {
       return View();
     }
 
     [HttpPost("/games")]
-    public ActionResult StringEval(string word, string sentence)
+    public ActionResult Create(string word, string sentence)
     {
-
-      StringEval stringEval = new StringEval(word, sentence);
-      return RedirectToAction("Index", stringEval);
+      StringEval stringEval =  new StringEval(word, sentence);
+      return View("Show", stringEval);
     }
 
+    [HttpPost("/games")]
+    public ActionResult DeleteAll()
+    {
+      StringEval.ClearAll();
+      return View();
+    }
   }
 }
